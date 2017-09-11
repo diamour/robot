@@ -1,0 +1,8 @@
+prefix=/home/gong/桌面/myrobot/install
+
+Name: socket
+Description: Description of socket
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gong/桌面/myrobot/install/lib 
+Requires: 

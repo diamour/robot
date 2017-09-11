@@ -1,0 +1,27 @@
+#!/usr/bin/python
+
+import socket              
+import rospy
+from std_msgs.msg import String
+import time
+
+s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)         
+host = '192.168.31.111'
+port = 8008                
+BUFSIZ = 1024
+
+s.bind((host, port))      
+
+s.listen(5)                
+
+rospy.init_node('tcptalker',anonymous=0)
+pub=rospy.Publisher('tcptopic',String,queue_size=10)
+rospy.loginfo('i am listening')
+while not rospy.is_shutdown():
+    c,addr = s.accept()
+    data=c.recv(BUFFER).decode()
+    data_str = "the data from PC is %d" % int(data)     
+    rospy.loginfo(data_str)
+    pub.publish(data_str)
+    c.send(('I have recieved!').encode())
+c.close()                
