@@ -1,2 +1,2 @@
 beginner_tutorials:led:myrobot_msgs:socket:wifi
--DCATKIN_DEVEL_PREFIX=/home/gong/桌面/myrobot/devel -DCMAKE_INSTALL_PREFIX=/home/gong/桌面/myrobot/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/gong/桌面/myrobot/myrobot/devel -DCMAKE_INSTALL_PREFIX=/home/gong/桌面/myrobot/myrobot/install -G Unix Makefiles

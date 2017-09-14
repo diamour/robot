@@ -1,8 +1,8 @@
-prefix=/home/gong/桌面/myrobot/install
+prefix=/home/gong/桌面/myrobot/myrobot/install
 
 Name: led
 Description: Description of led
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/gong/桌面/myrobot/install/lib 
+Libs: -L/home/gong/桌面/myrobot/myrobot/install/lib 
 Requires: 

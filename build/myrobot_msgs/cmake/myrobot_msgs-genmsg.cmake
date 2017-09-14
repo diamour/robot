@@ -2,7 +2,7 @@
 
 message(STATUS "myrobot_msgs: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Imyrobot_msgs:/home/gong/桌面/myrobot/src/myrobot_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Imyrobot_msgs:/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,9 +17,9 @@ add_custom_target(myrobot_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
+get_filename_component(_filename "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
 add_custom_target(_myrobot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "myrobot_msgs" "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "myrobot_msgs" "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg" ""
 )
 
 #
@@ -29,7 +29,7 @@ add_custom_target(_myrobot_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(myrobot_msgs
-  "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg"
+  "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/myrobot_msgs
@@ -49,7 +49,7 @@ add_custom_target(myrobot_msgs_generate_messages_cpp
 add_dependencies(myrobot_msgs_generate_messages myrobot_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
+get_filename_component(_filename "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
 add_dependencies(myrobot_msgs_generate_messages_cpp _myrobot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -62,7 +62,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS myrobot_msgs_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(myrobot_msgs
-  "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg"
+  "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/myrobot_msgs
@@ -82,7 +82,7 @@ add_custom_target(myrobot_msgs_generate_messages_eus
 add_dependencies(myrobot_msgs_generate_messages myrobot_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
+get_filename_component(_filename "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
 add_dependencies(myrobot_msgs_generate_messages_eus _myrobot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -95,7 +95,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS myrobot_msgs_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(myrobot_msgs
-  "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg"
+  "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/myrobot_msgs
@@ -115,7 +115,7 @@ add_custom_target(myrobot_msgs_generate_messages_lisp
 add_dependencies(myrobot_msgs_generate_messages myrobot_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
+get_filename_component(_filename "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
 add_dependencies(myrobot_msgs_generate_messages_lisp _myrobot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -128,7 +128,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS myrobot_msgs_generate_messages_lisp
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(myrobot_msgs
-  "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg"
+  "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/myrobot_msgs
@@ -148,7 +148,7 @@ add_custom_target(myrobot_msgs_generate_messages_nodejs
 add_dependencies(myrobot_msgs_generate_messages myrobot_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
+get_filename_component(_filename "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
 add_dependencies(myrobot_msgs_generate_messages_nodejs _myrobot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -161,7 +161,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS myrobot_msgs_generate_messages_node
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(myrobot_msgs
-  "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg"
+  "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/myrobot_msgs
@@ -181,7 +181,7 @@ add_custom_target(myrobot_msgs_generate_messages_py
 add_dependencies(myrobot_msgs_generate_messages myrobot_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
+get_filename_component(_filename "/home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg" NAME_WE)
 add_dependencies(myrobot_msgs_generate_messages_py _myrobot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
