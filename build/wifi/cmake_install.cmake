@@ -1,8 +1,8 @@
-# Install script for directory: /home/gong/桌面/myrobot/src/wifi
+# Install script for directory: /home/gong/myrobot/src/wifi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gong/桌面/myrobot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/gong/myrobot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/桌面/myrobot/build/wifi/catkin_generated/installspace/wifi.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/myrobot/build/wifi/catkin_generated/installspace/wifi.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/wifi/cmake" TYPE FILE FILES
-    "/home/gong/桌面/myrobot/build/wifi/catkin_generated/installspace/wifiConfig.cmake"
-    "/home/gong/桌面/myrobot/build/wifi/catkin_generated/installspace/wifiConfig-version.cmake"
+    "/home/gong/myrobot/build/wifi/catkin_generated/installspace/wifiConfig.cmake"
+    "/home/gong/myrobot/build/wifi/catkin_generated/installspace/wifiConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/wifi" TYPE FILE FILES "/home/gong/桌面/myrobot/src/wifi/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/wifi" TYPE FILE FILES "/home/gong/myrobot/src/wifi/package.xml")
 endif()
 

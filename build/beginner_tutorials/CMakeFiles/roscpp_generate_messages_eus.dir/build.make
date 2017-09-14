@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/src
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/build
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
 
 # Utility rule file for roscpp_generate_messages_eus.
 
@@ -63,10 +63,10 @@ beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/build: roscpp_gen
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/build
 
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	cd /home/gong/桌面/myrobot/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/gong/myrobot/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/depend:
-	cd /home/gong/桌面/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/src /home/gong/桌面/myrobot/src/beginner_tutorials /home/gong/桌面/myrobot/build /home/gong/桌面/myrobot/build/beginner_tutorials /home/gong/桌面/myrobot/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/beginner_tutorials /home/gong/myrobot/build /home/gong/myrobot/build/beginner_tutorials /home/gong/myrobot/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/depend
 

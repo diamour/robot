@@ -1,8 +1,8 @@
-prefix=/home/gong/桌面/myrobot/myrobot/devel
+prefix=/home/gong/myrobot/devel
 
 Name: wifi
 Description: Description of wifi
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/gong/桌面/myrobot/myrobot/devel/lib 
+Libs: -L/home/gong/myrobot/devel/lib 
 Requires: 

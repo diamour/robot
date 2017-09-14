@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/myrobot_msgs_generate_messages_cpp"
-  "/home/gong/桌面/myrobot/devel/include/myrobot_msgs/led.h"
+  "/home/gong/myrobot/devel/include/myrobot_msgs/led.h"
 )
 
 # Per-language clean rules from dependency scanning.

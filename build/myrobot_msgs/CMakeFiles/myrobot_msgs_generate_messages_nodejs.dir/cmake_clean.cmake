@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/myrobot_msgs_generate_messages_nodejs"
-  "/home/gong/桌面/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js"
+  "/home/gong/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js"
 )
 
 # Per-language clean rules from dependency scanning.

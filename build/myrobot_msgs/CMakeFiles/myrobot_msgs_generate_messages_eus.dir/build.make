@@ -43,32 +43,32 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/src
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/build
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
 
 # Utility rule file for myrobot_msgs_generate_messages_eus.
 
 # Include the progress variables for this target.
 include myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/progress.make
 
-myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus: /home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l
-myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus: /home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/manifest.l
+myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus: /home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l
+myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus: /home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/manifest.l
 
 
-/home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l: /home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gong/桌面/myrobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from myrobot_msgs/led.msg"
-	cd /home/gong/桌面/myrobot/build/myrobot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gong/桌面/myrobot/src/myrobot_msgs/msg/led.msg -Imyrobot_msgs:/home/gong/桌面/myrobot/src/myrobot_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p myrobot_msgs -o /home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/msg
+/home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l: /home/gong/myrobot/src/myrobot_msgs/msg/led.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gong/myrobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from myrobot_msgs/led.msg"
+	cd /home/gong/myrobot/build/myrobot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gong/myrobot/src/myrobot_msgs/msg/led.msg -Imyrobot_msgs:/home/gong/myrobot/src/myrobot_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p myrobot_msgs -o /home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/msg
 
-/home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gong/桌面/myrobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for myrobot_msgs"
-	cd /home/gong/桌面/myrobot/build/myrobot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs myrobot_msgs std_msgs
+/home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gong/myrobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for myrobot_msgs"
+	cd /home/gong/myrobot/build/myrobot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs myrobot_msgs std_msgs
 
 myrobot_msgs_generate_messages_eus: myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus
-myrobot_msgs_generate_messages_eus: /home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l
-myrobot_msgs_generate_messages_eus: /home/gong/桌面/myrobot/devel/share/roseus/ros/myrobot_msgs/manifest.l
+myrobot_msgs_generate_messages_eus: /home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/msg/led.l
+myrobot_msgs_generate_messages_eus: /home/gong/myrobot/devel/share/roseus/ros/myrobot_msgs/manifest.l
 myrobot_msgs_generate_messages_eus: myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/build.make
 
 .PHONY : myrobot_msgs_generate_messages_eus
@@ -79,10 +79,10 @@ myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/build: myrobot_ms
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/build
 
 myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/clean:
-	cd /home/gong/桌面/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/myrobot_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/gong/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/myrobot_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/clean
 
 myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/depend:
-	cd /home/gong/桌面/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/src /home/gong/桌面/myrobot/src/myrobot_msgs /home/gong/桌面/myrobot/build /home/gong/桌面/myrobot/build/myrobot_msgs /home/gong/桌面/myrobot/build/myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/myrobot_msgs /home/gong/myrobot/build /home/gong/myrobot/build/myrobot_msgs /home/gong/myrobot/build/myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_eus.dir/depend
 

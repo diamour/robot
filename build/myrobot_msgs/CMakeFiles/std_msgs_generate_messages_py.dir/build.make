@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/src
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/build
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
 
 # Utility rule file for std_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build: std_msgs_genera
 .PHONY : myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
 
 myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	cd /home/gong/桌面/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/gong/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/depend:
-	cd /home/gong/桌面/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/src /home/gong/桌面/myrobot/src/myrobot_msgs /home/gong/桌面/myrobot/build /home/gong/桌面/myrobot/build/myrobot_msgs /home/gong/桌面/myrobot/build/myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/myrobot_msgs /home/gong/myrobot/build /home/gong/myrobot/build/myrobot_msgs /home/gong/myrobot/build/myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : myrobot_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 

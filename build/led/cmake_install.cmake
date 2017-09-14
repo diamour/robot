@@ -1,8 +1,8 @@
-# Install script for directory: /home/gong/桌面/myrobot/src/led
+# Install script for directory: /home/gong/myrobot/src/led
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gong/桌面/myrobot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/gong/myrobot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/桌面/myrobot/build/led/catkin_generated/installspace/led.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/myrobot/build/led/catkin_generated/installspace/led.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/led/cmake" TYPE FILE FILES
-    "/home/gong/桌面/myrobot/build/led/catkin_generated/installspace/ledConfig.cmake"
-    "/home/gong/桌面/myrobot/build/led/catkin_generated/installspace/ledConfig-version.cmake"
+    "/home/gong/myrobot/build/led/catkin_generated/installspace/ledConfig.cmake"
+    "/home/gong/myrobot/build/led/catkin_generated/installspace/ledConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/led" TYPE FILE FILES "/home/gong/桌面/myrobot/src/led/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/led" TYPE FILE FILES "/home/gong/myrobot/src/led/package.xml")
 endif()
 

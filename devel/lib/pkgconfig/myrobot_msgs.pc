@@ -1,8 +1,8 @@
-prefix=/home/gong/桌面/myrobot/myrobot/devel
+prefix=/home/gong/myrobot/devel
 
 Name: myrobot_msgs
 Description: Description of myrobot_msgs
 Version: 0.0.0
-Cflags: -I/home/gong/桌面/myrobot/myrobot/devel/include
-Libs: -L/home/gong/桌面/myrobot/myrobot/devel/lib 
+Cflags: -I/home/gong/myrobot/devel/include
+Libs: -L/home/gong/myrobot/devel/lib 
 Requires: message_runtime
