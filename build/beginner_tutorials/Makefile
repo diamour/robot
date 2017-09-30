@@ -56,28 +56,6 @@ CMAKE_BINARY_DIR = /home/gong/myrobot/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -101,6 +79,38 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,16 +121,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -166,21 +166,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -194,6 +179,21 @@ roscpp_generate_messages_lisp: beginner_tutorials/CMakeFiles/roscpp_generate_mes
 roscpp_generate_messages_lisp/fast:
 	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
@@ -241,6 +241,21 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/rule:
 	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/rule
@@ -254,21 +269,6 @@ roscpp_generate_messages_py: beginner_tutorials/CMakeFiles/roscpp_generate_messa
 roscpp_generate_messages_py/fast:
 	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
@@ -286,21 +286,6 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
 	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
@@ -315,29 +300,44 @@ rosgraph_msgs_generate_messages_lisp/fast:
 	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
+# Convenience name for target.
+beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test"
-	@echo "... install/strip"
 	@echo "... install"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_lisp"
 	@echo "... install/local"
+	@echo "... list_install_components"
+	@echo "... install/strip"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... test"
+	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rebuild_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... list_install_components"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... edit_cache"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
 .PHONY : help
 
 

@@ -229,7 +229,7 @@ Project_BINARY_DIR:STATIC=/home/gong/myrobot/build
 Project_SOURCE_DIR:STATIC=/home/gong/myrobot/src
 
 //Path to a library.
-RT_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/librt.so
+RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 
 //Enable debian style python package layout
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON

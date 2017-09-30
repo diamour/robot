@@ -7,7 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/gong/myrobot/devel:$CMAKE_PREFIX_PATH"
+export CMAKE_PREFIX_PATH="/home/gong/myrobot/devel:/opt/ros/kinetic"
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/usr/local/lib/pkgconfig"
 export PWD="/home/gong/myrobot/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/gong/myrobot/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/gong/myrobot/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/gong/myrobot/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/gong/myrobot/src:/opt/ros/kinetic/share"
